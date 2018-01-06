@@ -56,3 +56,31 @@
     </div>
   </div>
 </section>
+
+<!-- VIDEO PLAYER SECTION -->
+
+<section id="video-play">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container p-5">
+          <a
+            (click)="open(videoModal)"
+            >
+            <i class="fa fa-play"></i>
+          </a>
+          <h1>See What We Do!</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO MODAL -->
+
+<ng-template #videoModal let-c="close" let-d="dismiss">
+  <div class="modal-body">
+    <iframe src="https://www.youtube.com/embed/EEH-IPYMrfE?autoplay=1" height='350' width='100%'frameborder="0" allowfullscreen></iframe>
+  <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
