@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { CanopyComponent } from './canopy/canopy.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CanopyComponent } from './canopy/canopy.component';
     HomeComponent,
     HeaderComponent,
     ContactComponent,
-    CanopyComponent
+    CanopyComponent,
+    CarouselComponent
   ],
   imports: [
     NgbModule.forRoot(),
