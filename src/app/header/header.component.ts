@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   }
   topScroll(){
     window.scrollTo(0, 0);
+    (this.isCollapsed === false) ? this.isCollapsed = true :  this.isCollapsed = false ;
   }
 
 
