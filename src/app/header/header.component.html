@@ -1,13 +1,13 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container">
     <button
       class="navbar-toggler"
       (click)="isCollapsed = !isCollapsed"
       [attr.aria-expanded]="!isCollapsed"
       aria-controls="collapseExample">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa fa-arrow-down"></i>
     </button>
-      <div class="navbar-brand">Logo</div>
+      <div class="navbar-brand">Brand Logo</div>
     <div
       class="collapse navbar-collapse"
       id="collapseExample"
@@ -19,7 +19,15 @@
           </li>
           <li class="nav-item">
             <a routerLinkActive="active"
-            routerLink="/canopy" (click)="topScroll()" class="nav-link">Canopy</a>
+            routerLink="/canopy" (click)="topScroll()" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a routerLinkActive="active"
+            routerLink="/services"  (click)="topScroll()" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a routerLinkActive="active"
+            routerLink="/blog"  (click)="topScroll()" class="nav-link">Blog</a>
           </li>
           <li class="nav-item">
             <a routerLinkActive="active"
