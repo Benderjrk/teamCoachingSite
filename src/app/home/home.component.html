@@ -51,7 +51,7 @@
         <button class="btn btn-outline-danger btn-lg">Learn More</button>
       </div>
       <div class="col-md-6">
-        <img src="../../assets/tumbnail3.JPG" class="img-fluid" alt="">
+        <img src="../../assets/thumb4.jpg" class="img-fluid" alt="">
       </div>
     </div>
   </div>
@@ -65,7 +65,7 @@
       <div class="col">
         <div class="container p-5">
           <a
-            (click)="open(videoModal)"
+            (click)="open2(videoModal)"
             >
             <i class="fa fa-play"></i>
           </a>
@@ -76,11 +76,51 @@
   </div>
 </section>
 
+<!-- NEWSLETTER SECTION -->
+
+<section id="newsletter" class="text-center bg-dark text-white p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Sign Up For Our Newsletter</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio nesciunt consequatur nisi accusamus quidem consequuntur, in odio debitis obcaecati!</p>
+        <form class="form-inline justify-content-center">
+          <label for="name" class="sr-only">Name</label>
+          <input
+            type="text"
+            class="form-control mb-2 mr-sm-2 mb-sm-0"
+            placeholder="name">
+          <label for="name" class="sr-only">Email</label>
+          <input
+            type="text"
+            class="form-control mb-2 mr-sm-2 mb-sm-0"
+            placeholder="Enter Email">
+          <button type="submit" class="btn btn-primary">Submit</button>
+       </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+
+<footer id="main-footer" class="text-center p-4 bg-warning">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>There could be a &copy; thing here</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
 <!-- VIDEO MODAL -->
 
 <ng-template #videoModal let-c="close" let-d="dismiss">
   <div class="modal-body">
     <iframe src="https://www.youtube.com/embed/EEH-IPYMrfE?autoplay=1" height='350' width='100%'frameborder="0" allowfullscreen></iframe>
+    <p>{{hello}}</p>
   <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
   </div>
 </ng-template>

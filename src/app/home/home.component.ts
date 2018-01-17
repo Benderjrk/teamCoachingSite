@@ -10,13 +10,37 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeComponent implements OnInit {
   closeResult: string;
+  myImages = [
+    {
+    thumbnail : '../../assets/black.jpg',
+    image : "Hello",
+    message : "Hello"
+    },
+    {
+    thumbnail : '../../assets/black.jpg',
+    image : "Hello",
+    message : "Hello"
+    },
+    {
+    thumbnail : '../../assets/black.jpg',
+    image : "Hello",
+    message : "Hello"
+    }
+  ];
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal) {
+
+   }
+
+
+
 
   ngOnInit() {
   }
 
-  open(content) {
+
+
+  open2(content) {
   this.modalService.open(content).result.then((result) => {
     this.closeResult = `Closed with: ${result}`;
   }, (reason) => {
